@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Agenda</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container mx-auto">
+        <h1 class="font-mono text-2xl text-center text-teal-700 truncate">APP Agenda</h1>
+        <div class="row">
+            <div class="col">
+                <label>Nome:</label>
+                <textarea id="nome" class="form-control" placeholder="Nome"></textarea>
+            </div>
+            <div class="col">
+                <label>Telefone:</label>
+                <textarea id="telefone" class="form-control" placeholder="Telefone"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-5 text-center">
+                <button type="button" id="botao-salvar" class="btn btn-primary btn-lg btn btn-success">SALVAR</button>
+            </div>
+            <div class="col mt-5 text-center">
+                <button type="button" id="botao-apagar" class="btn btn-primary btn-lg btn btn-success">APAGAR</button>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="card-header">
+                Contatos Salvos
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p id="anotacoes-salvas"></p>
+              </blockquote>
+            </div>
+          </div>
+    
+    </main>
+    <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
